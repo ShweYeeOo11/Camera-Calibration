@@ -66,7 +66,7 @@ The following table compares the raw input video frames with the rectified outpu
 
 | Original (Distorted) | Rectified (Corrected) |
 | :---: | :---: |
-| ![Original Frame](https://via.placeholder.com/400x300?text=Distorted+Frame) | ![Rectified Frame](https://via.placeholder.com/400x300?text=Corrected+Frame) |
+| ![Original Frame](chessboard.gif) | ![Rectified Frame](correct_output.gif) |
 | **Problem:** Straight edges of the chessboard appear curved due to Barrel Distortion. | **Solution:** Lines are mathematically straightened using the $K$ matrix and $dist$ coefficients. |
 
 ### Observation:
