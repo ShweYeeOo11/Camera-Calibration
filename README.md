@@ -5,7 +5,9 @@ This project demonstrates the process of **Camera Calibration** to calculate int
 ---
 
 ## 1. Project Overview
-Wide-angle lenses are prone to **Barrel Distortion**, where straight lines appear curved near the edges of the frame. This project uses a chessboard-based calibration method to mathematically rectify these distortions, ensuring geometric accuracy for computer vision applications.
+Most camera lenses are prone to **Geometric Distortion**, where straight lines in the real world appear curved in the captured image. This project demonstrates a standard **Camera Calibration** workflow to mathematically calculate the camera's intrinsic parameters and rectify these optical distortions. 
+
+By using a chessboard-based calibration method, we can accurately estimate the camera matrix and distortion coefficients, ensuring geometric consistency and spatial accuracy for high-level computer vision applications.
 
 ---
 
