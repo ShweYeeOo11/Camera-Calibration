@@ -97,7 +97,7 @@ The repository is organized as follows to ensure a clear calibration workflow an
 | `icamera_calibration.py` | Main script for frame extraction, chessboard corner detection, and calculating the $K$ matrix & $dist$ coefficients. |
 | `distortion_correction.py` | Script to apply saved calibration data to the video stream for real-time correction and undistortion. |
 | `calibration_result.npz` | Compressed NumPy file containing the saved `K` (camera matrix), `dist` (coefficients), `rvecs`, and `tvecs`. |
-| `data.MOV` | The raw input video containing the wide-angle lens footage used for the calibration process. |
+| `data.mp4` | The raw input video containing the wide-angle lens footage used for the calibration process. |
 | `corrected_result.mp4` | The final rectified output video with the geometric lens distortion removed. |
 | `README.md` | Project documentation, technical results (RMSE: 1.15), and implementation guide. |
 
