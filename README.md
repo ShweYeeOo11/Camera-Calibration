@@ -21,13 +21,13 @@ The intrinsic matrix representing focal length (fx, fy) and principal point (cx,
 [[3.19401902e+03, 0.00000000e+00, 1.08432504e+03],
  [0.00000000e+00, 3.19039532e+03, 1.92592461e+03],
  [0.00000000e+00, 0.00000000e+00, 1.00000000e+00]]
-
+```
 ### 🔧 Distortion Coefficients (`dist`)
 
 These coefficients correct radial and tangential distortion:
 
 | Coefficient | Value |
-| :--- | :--- |
+|-------------|-------|
 | **k1** (Radial) | `2.66674803e-01` |
 | **k2** (Radial) | `-1.59792785e+00` |
 | **p1** (Tangential) | `8.62949902e-04` |
@@ -35,9 +35,10 @@ These coefficients correct radial and tangential distortion:
 | **k3** (Radial) | `3.01521579e+00` |
 
 **Full array format:**
+
 ```python
 [[ 2.66674803e-01, -1.59792785e+00,  8.62949902e-04,  1.05856853e-03, 3.01521579e+00]]
-
+```
 ## 3. Implementation Workflow
 
 ### Step 1: Image Selection and Calibration
@@ -49,7 +50,7 @@ Run the calibration script to extract frames from the input video (`data.MOV`).
 **Command:**
 ```bash
 python3 icamera_calibration.py
-
+```
 ### Step 2: Video Rectification
 Run the correction script to apply the calculated parameters to the video stream and generate the output.
 * Press **'r'** to toggle between **Original** and **Rectified** views.
@@ -58,7 +59,7 @@ Run the correction script to apply the calculated parameters to the video stream
 **Command:**
 ```bash
 python3 distortion_correction.py
-
+```
 ## 4. Visual Comparison
 
 The following table compares the raw input video frames with the rectified output using the calculated distortion coefficients.
@@ -86,7 +87,7 @@ To install the necessary dependencies, run the following command in your termina
 
 ```bash
 pip install opencv-python numpy
-
+```
 ## 6. Project Structure
 
 The repository is organized as follows to ensure a clear calibration workflow and easy navigation through the source files:
